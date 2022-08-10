@@ -1,0 +1,22 @@
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+  }
+  .header-left {
+    background-color: skyblue;
+    width: 150px;
+  }
+  .header-center {
+    background-color: lightpink;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 36px;
+    max-width: 500px;
+  }
+  .header-right {
+    background-color: skyblue;
+    width: 150px;
+  }
