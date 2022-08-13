@@ -15,6 +15,7 @@
   }
   .thumbnail-row {
     margin-bottom: 12px;
+    position: relative;
   }
   .video-block-preview {
   }
@@ -48,4 +49,32 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 18px;
     row-gap: 42px;
+  }
+  @media (max-width: 750px) {
+    .all-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 999px) and (max-width: 751px) {
+    .all-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width: 1000px) {
+    .all-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .thumbnail-row-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 7px 4px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px 4px;
+    opacity: 0.9;
   }

@@ -15,208 +15,263 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/videoblock.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
   <body>
-    <div class="header-box">
-      <div class="header-left">
-        <img
-          class="hamburger-menu"
-          src="icons/hamburger-menu.svg"
-          alt="hamburger-menu"
-        />
-        <img
-          class="youtube-logo"
-          src="icons/youtube-logo.svg"
-          alt="youtube-logo"
-        />
-      </div>
-      <div class="header-center">
-        <input class="search-text" type="test" placeholder="Search" />
-        <button class="button-search">
-          <img class="search-icon" src="icons/search.svg" alt="search" />
-        </button>
-        <button class="button-microphone">
+    <header>
+      <nav class="header-box">
+        <div class="header-left">
           <img
-            class="microphone-icon"
-            src="icons/microphone.svg"
-            alt="microphone"
+            class="hamburger-menu"
+            src="icons/hamburger-menu.svg"
+            alt="hamburger-menu"
           />
-        </button>
-      </div>
-      <div class="header-right">
-        <img
-          class="video-download-icon"
-          src="icons/video-download.svg"
-          alt="video-download"
-        />
-        <img class="apps-icons" src="icons/apps.svg" alt="apps" />
-        <img
-          class="notification-bell-icon"
-          src="icons/notification-bell.svg"
-          alt="notification-bell"
-        />
-        <img
-          class="iconsMyLogo"
-          src="channel-pictures/iconsMyLogo.jpg"
-          alt="iconsMyLogo"
-        />
-      </div>
-    </div>
-
-    <div class="all-grid">
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
           <img
-            class="thumbnail1"
-            src="channel-pictures/thumbnail1.webp"
-            alt="images1"
+            class="youtube-logo"
+            src="icons/youtube-logo.svg"
+            alt="youtube-logo"
           />
         </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
+        <div class="header-center">
+          <input class="search-text" type="test" placeholder="Search" />
+          <button class="button-search">
+            <img class="search-icon" src="icons/search.svg" alt="search" />
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="button-microphone">
             <img
-              class="preview-photo1"
-              src="channel-pictures/previewphoto1.jpg"
-              alt="previewphoto1"
+              class="microphone-icon"
+              src="icons/microphone.svg"
+              alt="microphone"
             />
+            <div class="tooltip">Voice search</div>
+          </button>
+        </div>
+        <div class="header-right">
+          <img
+            class="video-download-icon"
+            src="icons/video-download.svg"
+            alt="video-download"
+          />
+          <img class="apps-icons" src="icons/apps.svg" alt="apps" />
+          <div class="nitfication-bell-icon-container">
+            <img
+              class="notification-bell-icon"
+              src="icons/notification-bell.svg"
+              alt="notification-bell"
+            />
+            <div class="nitfication-count">3</div>
           </div>
-          <div class="videotitle-box">
-            <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">3.4M views &#183; 6 months ago</p>
-          </div>
+          <img
+            class="iconsMyLogo"
+            src="channel-pictures/iconsMyLogo.jpg"
+            alt="iconsMyLogo"
+          />
         </div>
       </div>
 
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
+      <div class="sidebar">
+        <div class="sidebar-link">
+          <img class="iconsHome" src="icons/home.svg" alt="Home" />
+          <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+          <img class="iconsExplore" src="icons/compass.svg" alt="Explore" />
+          <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
           <img
-            class="thumbnail2"
-            src="channel-pictures/thumbnail2.webp"
-            alt="images2"
+            class="iconsSubscriptions"
+            src="icons/subscr.svg"
+            alt="Subscriptions"
           />
+          <div>Subscriptions</div>
         </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
-            <img
-              class="preview-photo2"
-              src="channel-pictures/previewphoto2.jpg"
-              alt="previewphoto2"
-            />
-          </div>
-          <div class="videotitle-box">
-            <p class="video-title">
-              Talking Tech With Google CEO Sundar Pichai!!
-            </p>
-            <p class="video-author">NothingButTech</p>
-            <p class="video-stats">669K views &#183; 2 months ago</p>
-          </div>
+        <div class="sidebar-link">
+          <img
+            class="iconsOriginals"
+            src="icons/youtube-originals.svg"
+            alt="Originals"
+          />
+          <div>Originals</div>
         </div>
-      </div>
+        <div class="sidebar-link">
+          <img
+            class="iconsYouTubeMusic"
+            src="icons/youtube-music.svg"
+            alt="Youtube Music"
+          />
+          <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+          <img class="iconsLibrary" src="icons/library.svg" alt="Library" />
+          <div>Library</div>
+        </div>
+      </nav>
+    </header>
 
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail3"
-            src="channel-pictures/thumbnail3.webp"
-            alt="images3"
-          />
-        </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
+    <main>
+      <section class="all-grid">
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
             <img
-              class="preview-photo2"
-              src="channel-pictures/previewphoto3.jpg"
-              alt="previewphoto3"
+              class="thumbnail1"
+              src="channel-pictures/thumbnail1.webp"
+              alt="images1"
             />
+            <div class="thumbnail-row-time">14:21</div>
           </div>
-          <div class="videotitle-box">
-            <p class="video-title">
-              Interview with Google CEO Sundar Pichai at Google I/O 2022
-            </p>
-            <p class="video-author">iJustine</p>
-            <p class="video-stats">2M views &#183; 2 months ago</p>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo1"
+                src="channel-pictures/previewphoto1.jpg"
+                alt="previewphoto1"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail4"
-            src="channel-pictures/thumbnail4.webp"
-            alt="images4"
-          />
-        </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
             <img
-              class="preview-photo4"
-              src="channel-pictures/previewphoto4.jpg"
-              alt="previewphoto4"
+              class="thumbnail2"
+              src="channel-pictures/thumbnail2.webp"
+              alt="images2"
             />
+            <div class="thumbnail-row-time">9:41</div>
           </div>
-          <div class="videotitle-box">
-            <p class="video-title">
-              A Day In The Life Of Sundar Pichai (Google's CEO)
-            </p>
-            <p class="video-author">Simply Tech</p>
-            <p class="video-stats">6M views &#183; 1 years ago</p>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo2"
+                src="channel-pictures/previewphoto2.jpg"
+                alt="previewphoto2"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">
+                Talking Tech With Google CEO Sundar Pichai!!
+              </p>
+              <p class="video-author">NothingButTech</p>
+              <p class="video-stats">669K views &#183; 2 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail5"
-            src="channel-pictures/thumbnail5.webp"
-            alt="images5"
-          />
-        </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
             <img
-              class="preview-photo5"
-              src="channel-pictures/previewphoto5.jpg"
-              alt="previewphoto5"
+              class="thumbnail3"
+              src="channel-pictures/thumbnail3.webp"
+              alt="images3"
             />
+            <div class="thumbnail-row-time">10:15</div>
           </div>
-          <div class="videotitle-box">
-            <p class="video-title">Talking Tech with Elon Musk!</p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">14M views &#183; 3 years ago</p>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo2"
+                src="channel-pictures/previewphoto3.jpg"
+                alt="previewphoto3"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">
+                Interview with Google CEO Sundar Pichai at Google I/O 2022
+              </p>
+              <p class="video-author">iJustine</p>
+              <p class="video-stats">2M views &#183; 2 months ago</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-block-preview">
-        <div class="thumbnail-row">
-          <img
-            class="thumbnail6"
-            src="channel-pictures/thumbnail6.webp"
-            alt="images6"
-          />
-        </div>
-        <div class="photo-title-box">
-          <div class="previewphoto-box">
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
             <img
-              class="preview-photo6"
-              src="channel-pictures/previewphoto6.jpg"
-              alt="previewphoto6"
+              class="thumbnail4"
+              src="channel-pictures/thumbnail4.webp"
+              alt="images4"
             />
+            <div class="thumbnail-row-time">6:22</div>
           </div>
-          <div class="videotitle-box">
-            <p class="video-title">
-              A Day In The Life Of Sundar Pichai (Google's CEO)
-            </p>
-            <p class="video-author">Nonstop Tech</p>
-            <p class="video-stats">2,4 views &#183; 6 months ago</p>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo4"
+                src="channel-pictures/previewphoto4.jpg"
+                alt="previewphoto4"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">
+                A Day In The Life Of Sundar Pichai (Google's CEO)
+              </p>
+              <p class="video-author">Simply Tech</p>
+              <p class="video-stats">6M views &#183; 1 years ago</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail5"
+              src="channel-pictures/thumbnail5.webp"
+              alt="images5"
+            />
+            <div class="thumbnail-row-time">25:20</div>
+          </div>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo5"
+                src="channel-pictures/previewphoto5.jpg"
+                alt="previewphoto5"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">Talking Tech with Elon Musk!</p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">14M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-block-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail6"
+              src="channel-pictures/thumbnail6.webp"
+              alt="images6"
+            />
+            <div class="thumbnail-row-time">32:03</div>
+          </div>
+          <div class="photo-title-box">
+            <div class="previewphoto-box">
+              <img
+                class="preview-photo6"
+                src="channel-pictures/previewphoto6.jpg"
+                alt="previewphoto6"
+              />
+            </div>
+            <div class="videotitle-box">
+              <p class="video-title">
+                A Day In The Life Of Sundar Pichai (Google's CEO)
+              </p>
+              <p class="video-author">Nonstop Tech</p>
+              <p class="video-stats">2,4 views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
